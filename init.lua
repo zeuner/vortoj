@@ -1,4 +1,4 @@
-local language = string.upper(minetest.setting_get("language"))
+local language = string.upper(minetest.settings:get("language"))
 
 if io.open(minetest.get_modpath("vortoj").."/".. language ..".lua") then
 	local vortoj = dofile(minetest.get_modpath("vortoj").."/".. language ..".lua")
