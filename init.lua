@@ -1,4 +1,4 @@
-local language = string.upper(minetest.setting_get("language"))
+local language = string.upper(minetest.settings:get("language"))
 
 if "" == language then
 	local env = os.getenv("LANG")
